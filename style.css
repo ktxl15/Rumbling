@@ -1,0 +1,707 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: .5s;
+	list-style: none;
+	outline: none;
+}
+@font-face {
+	font-family:eb;
+	src: url("font/Eras Bold ITC.TTF/Eras Bold ITC.TTF");
+}
+@font-face {
+	font-family:em;
+	src: url("font/Eras Medium ITC.ttf");
+}
+@font-face {
+	font-family:el;
+	src: url("font/erasitcl.ttf");
+}
+.dong_mask{
+	height: 100vh;
+	width: 100%;
+	background-color: #212121;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dong{
+	height: 1rem;
+	width: 7vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	filter: blur(2px);
+}
+.dong_con{
+	height: .8rem;
+	width: .8rem;
+	background-color: red;
+	border-radius: 1000rem;
+	box-shadow: 0 0 40px red,
+				0 0 40px red,
+				0 0 40px red;
+}
+.dong_con:nth-of-type(1){
+	animation: dong 1s .3s linear infinite;
+}
+.dong_con:nth-of-type(2){
+	animation: dong 1s .4s linear infinite;
+}
+.dong_con:nth-of-type(3){
+	animation: dong 1s .5s linear infinite;
+}
+.dong_con:nth-of-type(4){
+	animation: dong 1s .6s linear infinite;
+}
+.dong_con:nth-of-type(5){
+	animation: dong 1s .7s linear infinite;
+}
+.dong_con:nth-of-type(6){
+	animation: dong 1s .8s linear infinite;
+}
+@keyframes dong{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.move{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: black;
+}
+.move_img{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	filter: brightness(70%);
+	display: block;
+}
+.top{
+	height: 8vh;
+	background-color: rgb(0,0,0,.5);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+.top_w{
+	width: 75%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+	width: 10vw;
+	height: 70%;
+	align-items: center;
+	font-size: 3em;
+	font-weight: 900;
+	font-family: em;
+	color: white;
+}
+.logo_p:nth-of-type(1){
+	color: red;
+}
+.navi_ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70%;
+	width: 30vw;
+}
+.navi_li{
+	cursor: pointer;
+	font-family: eb;
+	font-size: 1em;
+	width: 20%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.navi_li:hover{
+	color: red;
+}
+.move_w{
+	height: 92vh;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	z-index: 1;
+}
+.move_text{
+	height: 50vh;
+	width: 40vw;
+}
+.move_h1{
+	color: white;
+	width: 100%;
+	height: 60%;
+	font-size: 7em;
+	font-family: eb;
+	letter-spacing: -.5rem;
+	display: flex;
+	align-items: center;
+}
+.move_p{
+	width: 50%;
+	color: white;
+	font-family: eb;
+}
+.about{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #212121;
+}
+.about_w{
+	width: 75%;
+	height: 70vh;
+}
+.about_h1{
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 4em;
+	font-family: em;
+	font-weight: 900;
+	transform: translateY(2rem);
+}
+.about_add
+{
+	transform: translateY(0rem);
+}
+.about_h1 span{
+	display: block;
+	color: red;
+}
+.about_main{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+.about_img{
+	float: left;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 1000%;
+	shape-outside: circle();
+	background: url(img/wallhaven-odjzj9.png) no-repeat;
+	background-size: 200% 100%;
+	background-position: 50%;
+	margin: 10px;
+	animation: rotk 40s linear infinite;
+	cursor: pointer;
+}
+.about_p{
+	font-size: 1.1em;
+	color: white;
+	font-weight: 100;
+	font-family: el;
+	line-height: 4rem;
+}
+._move{
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+._move_w{
+	height: 80vh;
+	width: 75%;
+}
+._move_h1{
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6rem;
+	font-family: em;	font-weight: 900;
+	cursor: pointer;
+	transition: .5s;
+	color: #212121;
+	transform: translateY(4rem);
+}
+._move_h1 span{
+	color: red;
+}
+.add_move_h1{
+	transform: translateY(0rem);
+}
+._move_content{
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+._move_left{
+	background: linear-gradient(to right,red 30%,#212121 0%);
+	width: 30%;
+	position: relative;
+}
+.ML_main{
+	height: 40vh;
+	width: 20vw;
+	position: relative;
+	top: 20%;
+	left: 50%;
+	overflow: hidden;
+}
+.ML_ul{
+	display: flex;
+	height: 100%;
+	width: 300%;
+}
+.ML_li{
+	display: flex;
+	height: 40vh;
+	width: 20vw;
+}
+.ML_li:nth-of-type(1){
+	background: url(img/wallhaven-836d92.png) no-repeat;
+	background-size: 200% 100%;
+	background-position: 50%;
+}
+.ML_li:nth-of-type(2){
+	background: url(img/wallhaven-v9gwpm.png) no-repeat;
+	background-size: 200% 100%;
+	background-position: 50%;
+}
+.ML_li:nth-of-type(3){
+	background: url(img/wallhaven-39161d.jpg) no-repeat;
+	background-size: 180% 100%;
+	background-position: 50%;
+}
+._move_right{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.MR_main{
+	height: 30vh;
+	width: 25vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.MR_text{
+	height: 10vh;
+	width: 20vw;
+	position: relative;
+}
+.MR_li{
+	background-color: white;
+	height: 15vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 900;
+	font-family: eb;
+	position: absolute;
+	opacity: 0;
+}
+._btn_left,._btn_right{
+	height: 2rem;
+	width: 2rem;
+	background-color: red;
+	margin-top: 2rem;
+	border-radius: 1000rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	-webkit-user-select: none;
+	margin-left: 2rem;
+}
+._btn_left:active{
+	transform: scale(.8);
+}
+._btn_right:active{
+	transform: scale(.8);
+}
+.content{
+	background-color: #212121;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content_w{
+	height: 70vh;
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content_right{
+	height: 100%;
+	width: 50%;
+	background: url(img/wallhaven-4gw72d.jpg) no-repeat;
+	background-size: 130% 100%;
+	background-position: 100%;
+	filter: grayscale(100%);
+	transform: translateY(15rem);
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content_right::after{
+	content: 'Rumbling';
+	display: block;
+	font-size: 7rem;
+	color: white;
+	filter: blur(100px);
+	opacity: 0;
+	font-family: eb;
+	text-shadow: 0 0 40px skyblue,
+				 0 0 40px skyblue;
+	cursor: pointer;
+	transition: .4s;
+}
+.content_right:hover::after{
+	filter: blur(2px);
+	opacity: 1;
+}
+.add_Cright{
+	transform: translateY(0rem);
+	opacity: 1;
+}
+.content_left{
+	height: 100%;
+	width: 40%;
+}
+.content_up{
+	height: 90%;
+	width: 100%;
+	color: white; 
+	font-size: 1.2em;
+	transform: translateY(4rem);
+	font-family: em;
+	font-weight: 900;
+	opacity: 0;
+}
+.add_up{
+	transform: translateY(0rem);
+	opacity: 1;
+}
+.content_up span{
+	color: red;
+}
+.content_img{
+	height: 80%;
+	width: 100%;
+	background: url(img/wallhaven-1ke2qv.jpg) no-repeat;
+	background-size: 150% 120%;
+	background-position: 50%;
+	margin-top: 2rem;
+	filter: saturate(0%) brightness(0%);
+}
+.content_img_add{
+	filter: saturate(140%)  brightness(70%);
+}
+.content_down{
+	height: 8%;
+	width: 10rem;
+	background-color:brown;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 2rem;
+	font-family: em;
+	font-weight: 900;
+}
+.content_down:active{
+	transform: scale(.8);
+}
+.event{
+	background-color: #212121;
+	height: 22vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.event_w{
+	width: 75%;
+	height: 100%;
+	background-color: #212121;
+}
+.event_h1{
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 10rem;
+	color: white;
+	font-family: eb;
+	font-style: oblique;
+	position: relative;
+}
+.event_h1::after{
+	content: '';
+	display: block;
+	width: 30%;
+	position: absolute;
+	height: .5rem;
+	background-color: red;
+	bottom: 0;
+}
+.event_mask{
+	transition: .8s;
+	position: absolute;
+	z-index: 4;
+	height: 100%;
+	width: 50%;
+	top: 0;
+	left: 0;
+	background-color: #212121;
+	transform: rotate(0deg);
+}
+.event_mask_add{
+	width: 0%;
+}
+.E_con{
+	height: 80vh;
+	width: 100%;
+	background-color: #212121;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.E_con_w{
+	width: 75%;
+	height: 60vh;
+	position: relative;
+}
+.E_con_ul{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 170%;
+	height: 100%;
+}
+.E_con_li{
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+	filter: brightness(20%) saturate(0%);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.E_btn{
+	height: 8rem;
+	width: 100%;
+	border: 0px;
+	color: white;
+	font-family:eb;
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -1;
+	filter: blur(3px);
+	transform-origin: center;
+	transform: .1s;
+	filter: blur(200px);
+}
+.E_con_li:hover .E_btn{
+	filter: blur(3px);
+}
+.E_btn::after{
+	content: 'MOVE UP';
+	height: 8rem;
+	width: 100%;
+	border: 0px;
+	position: absolute;
+	color: white;
+	font-family:eb;
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+	text-shadow: 2px 0px 60px skyblue,
+				 2px 0px 60px skyblue,
+				 2px 0px 60px skyblue,
+				 2px 0px 60px skyblue;
+}
+.E_btn::before{
+	content: 'MOVE UP';
+	height: 8rem;
+	width: 100%;
+	border: 0px;
+	position: absolute;
+	color: white;
+	font-family:eb;
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+	text-shadow: -2px 0px 10px blue,
+				 -2px 0px 10px blue,
+				 -2px 0px 10px blue,
+}
+.E_con_li::after{
+	content: '';
+	position: absolute;
+	display: block;
+	height: 0rem;
+	width: 100%;
+	background-color: #212121;
+	top: 0;
+	transition: .4s;
+}
+.E_con_li::before{
+	content: '';
+	position: absolute;
+	display: block;
+	height: 0rem;
+	width: 100%;
+	bottom: 0;
+	background-color: #212121;
+	transition: .4s;
+}
+.E_con_li:hover::after{
+	height: 2rem;
+}
+.E_con_li:hover::before{
+	height: 2rem;
+}
+.E_con_li:hover{
+	filter: brightness(100%) saturate(70%);
+}
+.E_con_li:nth-of-type(1){
+	background: url(img/wallhaven-l38p3r.png);
+	background-size: 200% 100%;
+	background-position: 40%;
+}
+.E_con_li:nth-of-type(2){
+	background: url(img/wallhaven-8311oj.jpg) no-repeat;
+	background-size: 220% 110%;
+	background-position: 40% 0%;
+}
+.E_con_li:nth-of-type(3){
+	background: url(img/wallhaven-k7vw9m.jpg) no-repeat;
+	background-size: 200% 100%;
+	background-position: 40%;
+}
+.E_con_li:nth-of-type(4){
+	background: url(img/wallhaven-28wv5g.png);
+	background-size: 200% 100%;
+	background-position: 80%;
+}
+.foot{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #212121;
+}
+.foot_w{
+	width: 75%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.foot_left{
+	width: 50%;
+	height: 100%;
+}
+.foot_p{
+	width: 40%;
+	height: 10vh;
+	font-size: 1.3rem;
+	display: flex;
+	align-items: flex-end;
+	color: white;
+	font-family: em;
+	position: relative;
+}
+.foot_p::after{
+	content: '';
+	display: block;
+	width: 4vw;
+	height: .3rem;
+	background-color: red;
+	position: absolute;
+	left: 15vw;
+	bottom: 1vh;
+}
+.foot_head{
+	width: 100%;
+	font-size: 6rem;
+	color: white;
+	font-family: eb;
+	height: 30vh;
+}
+.foot_main{
+	height: 60vh;
+	width: 100%;
+}
+.foot_video{
+	height: 45vh;
+	width: 100%;
+	background-color: black;
+}
+.foot_foot{
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	font-family: em;
+}
+.foot_right{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+}
+.foot_right img{
+	height: 100%;
+	margin-left: 7rem;
+	filter: saturate(0%);
+}
